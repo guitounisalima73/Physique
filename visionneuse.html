@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="no-js after-run"lang="ar" dir="rtl" >
+	<head>
+		<link rel="stylesheet" href="Style-visionneuse.css">
+		<script src="Script-index.js" async> </script> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Ma premiere page</title>
+	</head>
+	<body>
+		<div class="entete">
+			<div class="enteteitem1">
+				فيزياء التعليم الثانوي
+			</div>
+			<div class="enteteitem2">
+				قيطوني س.			
+			</div>
+		</div>	
+
+		<div class="mainmenu">
+			<div class="menuitem">
+				الرئيسية			
+			</div>
+			<div class="menuitem">
+				صفحة البكالوريا			
+			</div>
+			<div class="menuitem">
+				قناتي على اليوتوب
+			</div>	
+			<div class="menuitem">
+				تواصل			
+			</div>			
+		</div>	 
+		
+
+
+		<div class="visionneuse-pdf">	
+			<iframe id="my_url" width="100%" height="100%" frameborder="1"  ></iframe>
+		</div>
+
+		<script type="text/javascript">
+			function ouvrir(){
+			url=window.location.search;
+			//url=window.location.href;
+			//let namefile=url;
+			let namefile=url.slice(1,url.length);
+			if (namefile=="") {
+				alert("acun fichier a afficher")
+			}
+			else
+
+			//alert(namefile);
+			//namefile="Cours/1AS/TCST/"+namefile;
+			{document.getElementById("my_url").src=namefile+"#toolbar=0";}
+			}
+			ouvrir();
+		</script>
+	
+
+
+		<div class="footer">
+			mmlksmlklmsk
+		</div>
+	</body>
+</html>
